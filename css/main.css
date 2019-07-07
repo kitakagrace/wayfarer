@@ -1,0 +1,60 @@
+.main-section {
+    width: 85%;
+    margin: 50px auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.centerBox{
+    border:2px solid white;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding-top:20px;
+    padding-bottom: 20px;
+    width:49%;
+    float: right;
+    text-align: center;
+}
+input{
+    color:rgb(158, 158, 151);
+    border-radius: 30px;
+    border:1px solid rgb(241, 241, 235);
+    height:40px;
+    width:350px;
+    border:0.5px solid rgb(79, 201, 63);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    outline: none;
+}
+.submitBtn{
+    border:1px solid white;
+   background-color: rgb(79, 201, 63);
+   color:white;
+    padding:13px;
+    border-radius: 30px;
+    width:200px;
+    text-transform: uppercase;
+    outline: none;
+}
+.formImage{
+  
+}
+
+.img-side {
+    float: left;
+    width: 50%;
+}
+.the-form {
+    float: right;
+    background: #ccc;
+    width:50%;
+}
+.footer {
+    clear: both;
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #eeeeee;
+   color: rgb(0, 0, 0);
+   text-align: center;
+}
