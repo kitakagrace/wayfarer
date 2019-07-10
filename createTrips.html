@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="resources/wayfarerLogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/createTrips.css">
+    <title>Document</title>
+</head>
+<body>
+    <img class="beauty" src="resources/49980.jpg" >
+    <img class="logo" src="resources/wayfarerLogo.jpg" alt="" srcset="">
+    
+    <div class="centerBox">
+    <form action="" method="post">
+        <p>Where to:</p>
+        <select name="" id="select">
+            <option value="Kampala">Kampala</option>
+            <option value="Kigali">Kigali</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Nairobi">Nairobi</option>
+        </select>
+        <p>Where to pick from:</p>
+        <select name="" id="select">
+            <option value="Masaka">Masaka</option>
+            <option value="Adjumani">Adjumani</option>
+            <option value="Mbarara">Mbarara</option>
+            <option value="Kololo">Kololo</option>
+        </select>
+        <br>
+    </form>
+    <button class="submitBtn" onClick="confirmBox();">create trip</button>
+    
+    </div>
+    <footer class="footer">
+            <p>&copy 2019 Wayfarer Copyrights Reserved.</p> 
+    </footer>
+</body>
+<script>
+function confirmBox(){
+    alert("Trip created");
+    window.open('/cancelTrips.html', '_self');
+
+}
+</script>
+</html>
