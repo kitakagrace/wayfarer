@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="resources/wayfarerLogo.jpg" image/x-icon">
+    <link rel="stylesheet" href="css/signIn.css">
+    <title>Wayfarer</title>
+</head>
+<body>
+    <div class="main-section">
+        <div class="centerBox">
+            <div class="formImage">
+                 <div class="formImage">
+                            <img src="resources/wayfarerLogo.jpg" alt="wayfarerLogo" srcset="">
+                 </div>
+            </div>
+            <form action="" method="post">
+                <input id="emailAddress" type="email"  class="input" placeholder="Email Adress">
+                <br>
+                <input id="password" type="password"  class="input" placeholder="Password">
+                <br>
+                <input type="radio" value="admin" name="theUser" class="radioBtn">Admin
+                <input type="radio" value="user" name="theUser" class="radioBtn" >user<br/>
+            </form>
+            <button class="submitBtn" onClick="redirectFunction();">Sign in</button>
+        </div>
+        <img src="resources/background.jpg" alt="" class="img-side" srcset="">
+    </div>
+    <footer class="footer">
+        <p>&copy 2019 Wayfarer Copyrights Reserved.</p> 
+    </footer>
+</body>
+<script>
+    function redirectFunction(){
+        email = document.getElementById("emailAddress").value;
+        if(email == "kitakagrace@gmail.com"){
+            window.open('/viewTrips.html', '_self');
+        }else if(email=="kitakagrace@admin.com"){
+            window.open('/cancelTrips', '_self');
+        }else if(email == ""){
+            alert("Empty field detected Please fill in the form")
+        }else{
+            alert("Account not recognised")
+        }
+    }
+</script>
+</html>
