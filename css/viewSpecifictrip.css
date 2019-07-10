@@ -1,0 +1,202 @@
+*{
+    padding:0;
+    margin:0;
+}
+.tripContent{
+    padding:10px;
+    border:1px solid white;
+    box-shadow: 0px 0px 5px 0px  rgb(158, 158, 151);
+    width:70%;
+    margin-left:13%;
+    margin-top:20px;
+    border-radius:10px;
+}
+.tripTitle{
+    text-align:center;
+    color:rgb(79, 201, 63);
+   border-bottom:1px solid rgb(158, 158, 151);
+   padding-bottom:10px;
+   font-size: 25px;
+
+}
+.tripDetails{
+    color: rgb(158, 158, 151);
+}
+.tripDetails p{
+    padding-bottom:10px;
+    padding-top:10px;
+}
+#bookBtn{
+    background-color:rgb(79, 201, 63);
+    color:white;
+    border:1px solid white;
+    padding:13px;
+    border-radius: 7px;
+    width:100px;
+    margin-top:10px;
+    margin-right:-100px;
+}
+#bookingBtn{
+    border:1px solid rgb(79, 201, 63);
+   background-color: white;
+   color:rgb(79, 201, 63);
+    padding:13px;
+    border-radius: 7px;
+    width:100px;
+}
+#bookingBtn:hover{
+   background-color: rgb(79, 201, 63);
+   color:white;
+    
+}
+#cancelBtn{
+    background-color:rgb(241, 101, 101);
+    color:white;
+    border:1px solid white;
+    padding:13px;
+    border-radius: 7px;
+    width:100px;
+    float:right;
+    margin-top:10px;
+}
+#form-popup{
+    display:none;
+    position:fixed;
+    z-index:9;
+    width:250px;
+    padding:20px;
+    background-color: #fff;
+    border:1px solid rgb(230, 230, 219);
+    border-radius:7px;
+    margin-top:-200px;
+    }
+#form-popup input{
+    width:100%;
+    color:rgb(158, 158, 151);
+    border:1px solid rgb(79, 201, 63);
+    outline:none;
+    border-radius: 15px;
+    height:30px;
+    margin-bottom: 10px;
+    padding :3px;  
+    font-size:15px
+}
+
+#selectBox{
+    width:100%;
+    color:rgb(158, 158, 151);
+    border:1px solid rgb(79, 201, 63);
+    outline:none;
+    border-radius: 15px;
+    height:33px;
+    padding-left:10px;
+    outline: none;
+}
+@media only screen and (max-width: 600px) {
+    #form-popup{
+        margin-top:-200px;
+    }
+  }
+
+
+#menuBtn{
+    visibility: hidden;
+  }
+  .logo{
+    width:87px;
+    margin-top:-20px;
+    }
+  .navBar{
+     height:100px;
+     box-shadow: 0px 0px 5px 0px rgb(161, 159, 159);
+  }
+  .menu ul{
+    float:right;
+    margin-top:-20px;
+  }
+  .menu ul li{
+    display: inline-block;
+    margin-top:35px;
+    padding-right: 10px;
+  }
+  .menu ul li a{
+    text-decoration:none;
+    font-size: 17px;
+  }
+  .btn-simple{
+    background-color:rgb(79, 201, 63);;
+    color:white;
+    padding:13px;
+    border-radius: 7px;
+    width:100px;
+  }
+  .btn-outline{
+    border:1px solid rgb(79, 201, 63);;
+    background-color: white;
+    color:rgb(79, 201, 63);;
+     padding:13px;
+     border-radius: 7px;
+     width:100px;
+  }
+  @media screen and (max-width: 600px) {
+    .menu {
+      visibility: hidden;
+      box-shadow:0px 0px 5px 0px white;
+     
+    }
+   
+    .menu ul li{
+      display:block;  
+  }
+    .logo{
+      visibility: visible;
+    }
+    .resBtn{
+      border:1px solid white;
+      opacity:0.5;
+      background-image: url("resources/menu.png");
+      background-size: 50px 50px;
+      float:right;
+      width:50px;
+      height:50px;
+     margin-top:20px;
+    }
+    .resBtn + .menu:active,
+    .resBtn:focus + .menu {
+      visibility: visible;
+    } 
+    
+    #menuBtn{
+    visibility: visible;
+    margin-top:20px;
+    width:60px;
+    background-color:white;
+    border:1px solid grey;
+    border-radius: 5px;
+    outline:none;
+    }
+  
+    
+    .menu ul li a{
+      list-style: none;
+      text-align: center;
+    }
+    a{
+      text-decoration:none;
+    }
+    .btn-simple{
+      background-color:rgb(79, 201, 63);
+      color:white;
+      padding:5px;
+      border-radius: 5px;
+      width:100px;
+    }
+    .btn-outline{
+      border:1px solid rgb(79, 201, 63);;
+      background-color: white;
+      color:rgb(79, 201, 63);;
+       padding:5px;
+       border-radius: 5px;
+       width:100px;
+    }
+  }

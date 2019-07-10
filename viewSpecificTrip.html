@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/viewSpecifictrip.css">
+    <title>Document</title>
+</head>
+<body>
+
+        <div class="navBar">
+                <button class="resBtn" id="menuBtn">Menu</button>
+                <nav class="menu">
+                    <img  class="logo" src="resources/wayfarerLogo.jpg" alt="" srcset="">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/viewTrips.html">Trips</a></li>
+                        <li><a href="/viewAllBookings.html">Bookings</a></li>
+                        <li><a href="#" class="/createTrips.html">Create Trip</a></li>
+                        <li><a href="#" class="index.html">Logout</a></li>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+
+    <div class="tripContent">
+        <div class="tripTitle">Kampala to Kigali</div>
+        <div class="tripDetails">
+            <p>Bus Type: MashPoa Executive</p>
+            <p>Total seats: 56</p>
+            <p>Remaining seats: 7</p>
+            <p>Time of Departure: 4:00pm</p>
+
+            <div id="form-popup">
+            <form action="" method="post">
+                <input type="text" name="" id="" placeholder="Confirm Username">
+                <br>
+                <input type="date" name="" id="">
+                <br>
+                <select name="" id="selectBox">
+                    <option value="">Available Seats</option>
+                    <option value="B-12">B-12</option>
+                    <option value="B-19">B-19</option>
+                    <option value="B-18">B-18</option>
+                    <option value="B-19">B-19</option>
+                </select>
+                <br>  
+             </form>
+             <button id="bookBtn" onClick="confirmFunction();">Book Now</button>
+             <button id="cancelBtn" onClick="closeFunction();">Cancel</button>
+            </div>
+
+            <button id="bookingBtn" onClick="openFunction();">Book Now</button>
+        </div>
+    </div>
+</body>
+<script>
+function confirmFunction(){
+    alert("Trip booked successfully");
+    window.open('/viewUserBookings.html', '_self');
+}
+function openFunction(){
+    const bookingBtn = document.getElementById('bookingBtn');
+    const formDisplay = document.getElementById('form-popup');
+    formDisplay.style.display = "block";
+    bookingBtn.style.display = "none";
+}
+
+function closeFunction(){
+    const bookingBtn = document.getElementById('bookingBtn');
+    const formClose = document.getElementById('form-popup');
+    formClose.style.display = "none";
+    bookingBtn.style.display = "block";
+}
+</script>
+</html>
