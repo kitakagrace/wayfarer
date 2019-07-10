@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="resources/wayfarerLogo.jpg" image/x-icon">
+    <link rel="stylesheet" href="css/cancelTrips.css">
+    <script src="js/deleteContent.js"></script>
+    <title>Wayfarer</title>
+</head>
+<body>
+    <div class="navBar">
+        <button class="resBtn" id="menuBtn">Menu</button>
+        <nav class="menu">
+            <img  class="logo" src="resources/wayfarerLogo.jpg" alt="" srcset="">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/viewTrips.html">Trips</a></li>
+                <li><a href="/viewAllBookings.html">Bookings</a></li>
+                <li><a href="/createTrips.html" class="btn-simple">Create Trip</a></li>
+                <li><a href="/index.html">Logout</a></li>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="tripGroup">
+                    <div class="outerCard" id="adjustContentOne">
+                    <img src="resources/cardBus.jpg" alt="cardBus" class="cardBus">
+                    <div class="aroundTitle">
+                    <h4 class="cardTitle">Kampala to Kigali</h4>
+                    </div>
+                    <div class="cardDetails">
+                        <div class="passengers">
+                        <p>44 Passengers</p>
+                        <p>4 Seats Remaining</p>
+                        </div>
+                        <div class="bottomDetails">
+                        <h6>Time of departure: 4:00pm</h6>
+                        </div>
+                        <button onclick="deleteFunctionOne();" class="deleteBtn">Cancel Trip</button>
+                    </div>
+                </div>
+           
+                <div class="outerCard" id="adjustContentTwo">
+                            <img src="resources/cardBus.jpg" alt="cardBus" class="cardBus">
+                            <div class="aroundTitle">
+                            <h4 class="cardTitle">Kigali to Kampala</h4>
+                            </div>
+                            <div class="cardDetails">
+                                <div class="passengers">
+                                <p>44 Passengers</p>
+                                <p>9 Seats Remaining</p>
+                                </div>
+                                <div class="bottomDetails">
+                                <h6>Time of departure: 4:00pm</h6>
+                                </div>
+                                <button onclick="deleteFunctionTwo();" class="deleteBtn">Cancel Trip</button>
+                            </div>
+                        </div>
+                        <div class="outerCard" id="adjustContentThree">
+                            <img src="resources/cardBus.jpg" alt="cardBus" class="cardBus">
+                            <div class="aroundTitle">
+                            <h4 class="cardTitle">Masaka to Kampala</h4>
+                            </div>
+                            <div class="cardDetails">
+                              <div class="passengers">
+                                <p>44 Passengers</p>
+                                <p>2 Seats Remaining</p>
+                              </div>
+                                <div class="bottomDetails">
+                                <h6>Time of departure: 4:00pm</h6>
+                                </div>
+                                <button onclick="deleteFunctionThree();" class="deleteBtn">Cancel Trip</button>
+                            </div>
+                        </div>
+                        <div class="outerCard" id="adjustContentFour">
+                                <img src="resources/cardBus.jpg" alt="cardBus" class="cardBus">
+                                <div class="aroundTitle">
+                                <h4 class="cardTitle">Masaka to Kampala</h4>
+                                </div>
+                                <div class="cardDetails">
+                                  <div class="passengers">
+                                    <p>44 Passengers</p>
+                                    <p>2 Seats Remaining</p>
+                                  </div>
+                                    <div class="bottomDetails">
+                                    <h6>Time of departure: 4:00pm</h6>
+                                    </div>
+                                    <button onclick="deleteFunctionFour();" class="deleteBtn">Cancel Trip</button>
+                                </div>
+                            </div>
+                           
+                                
+        
+    </div>
+
+    <footer class="footer">
+        <p>&copy 2019 Wayfarer Copyrights Reserved.</p> 
+    </footer>
+</body>
+
+</html>
