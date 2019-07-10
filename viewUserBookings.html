@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/viewUserBookings.css">
+    <title>Wayfarer</title>
+</head>
+<body>
+        <div class="navBar">
+                <button class="resBtn" id="menuBtn">Menu</button>
+                <nav class="menu">
+                    <img  class="logo" src="resources/wayfarerLogo.jpg" alt="" srcset="">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/viewTrips.html">Trips</a></li>
+                        <li><a href="/viewAllBookings.html">Bookings</a></li>
+                        <li><a href="#" class="index.html">Logout</a></li>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+ <div class="bookingList">
+    <div class="totalCard" id="forClosingOne">
+        <img class="bookImg" src="resources/mashpoaBus.jpg" alt="Bus image" srcset="">
+    <div class="words">
+        <p>Kampala to Kigali</p>
+        <p>Total passenger: 67</p>
+        <p>Time of departure: 4:00pm</p>
+        <button id="closeBtn" class="btn-delete" onClick="disappearFunctionOne();">Delete booking</button>
+    </div>
+    </div>
+    <div class="totalCard" id="forClosingTwo">
+        <img class="bookImg" src="resources/mashpoaBus.jpg" alt="Bus image" srcset="">
+    <div class="words">
+        <p>Kampala to Kigali</p>
+        <p>Total passenger: 67</p>
+        <p>Time of departure: 4:00pm</p>
+        <button id="closeBtn" class="btn-delete" onClick="disappearFunctionTwo();">Delete booking</button>
+    </div>
+    </div>
+    <div class="totalCard" id="forClosingThree">
+        <img class="bookImg" src="resources/mashpoaBus.jpg" alt="Bus image" srcset="">
+    <div class="words">
+        <p>Kampala to Kigali</p>
+        <p>Total passenger: 67</p>
+        <p>Time of departure: 4:00pm</p>
+        <button id="closeBtn" class="btn-delete" onClick="disappearFunctionThree();">Delete booking</button>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+function disappearFunctionOne(){
+    const closeBtn = document.getElementById('forClosingOne');
+    closeBtn.style.display = 'none';
+}
+function disappearFunctionTwo(){
+    const closeBtn = document.getElementById('forClosingTwo');
+    closeBtn.style.display = 'none';
+}
+function disappearFunctionThree(){
+    const closeBtn = document.getElementById('forClosingThree');
+    closeBtn.style.display = 'none';
+}
+</script>
+</html>
