@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tripGroup {
+    margin-left:100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:50px;
+}
+.passengers{
+    font-size: 14px;
+    text-align:center;
+}
+.outerCard{
+    margin: 20px;
+    width:220px;
+    border-radius: 10px;
+    border: 0.5px solid rgb(122, 122, 113);
+    box-shadow: 5px 5px 5px 0px rgb(122, 122, 113);
+}
+.cardBus{
+    width:100%;
+    border-radius: 10px 10px 0 0;
+}
+.cardTitle{
+    padding: 10px;
+    color: rgb(79, 201, 63);
+    border-bottom:1px solid rgb(158, 158, 151);
+    font-weight: 100;
+}
+.cardDetails{
+    padding:10px;
+}
+.bottomDetails{
+    margin-top:10px;
+    padding-top:10px;
+    text-align: center;
+    color:rgb(158, 158, 151);
+    border-top: 1px solid rgb(158, 158, 151);
+}
+.aroundTitle{
+    padding-left:10px;
+    padding-right: 10px;
+}
+.submitBtn{
+    border:1px solid white;
+   background-color: rgb(79, 201, 63);
+   color:white;
+    padding:13px;
+    border-radius: 30px;
+    width:200px;
+    text-transform: uppercase;
+    outline: none;
+}
+.submitBtn:hover {
+    background-color: rgb(55, 173, 39);
+}
+.formImage{
+    height: 70px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+
+.footer {
+   text-align: center;
+}
+.bookBtn{
+    border:2px solid rgb(79, 201, 63);
+    background-color:white;
+    padding:4px;
+    margin-left:60px;
+    border-radius:10px;
+    color:rgb(158, 158, 151);
+}
+.bookBtn a{
+    text-decoration: none;
+    color:rgb(79, 201, 63);
+}
+.bookBtn:hover{
+    background-color:rgb(79, 201, 63);
+    padding:4px;
+    margin-left:60px;
+    border-radius:10px;
+    color:white;
+    outline:none;
+}
+
+
+#menuBtn{
+    visibility: hidden;
+  }
+  .logo{
+    width:87px;
+    margin-top:-20px;
+    }
+ .navBar{
+     height:100px;
+     box-shadow: 0px 0px 5px 0px rgb(161, 159, 159);
+ }
+  .menu ul{
+    float:right;
+    margin-top:-20px;
+  }
+  .menu ul li{
+    display: inline-block;
+    margin-top:35px;
+    padding-right: 10px;
+  }
+  .menu ul li a{
+    text-decoration:none;
+    font-size: 17px;
+  }
+  .btn-simple{
+    background-color:rgb(79, 201, 63);;
+    color:white;
+    padding:13px;
+    border-radius: 7px;
+    width:100px;
+  }
+  .btn-outline{
+    border:1px solid rgb(79, 201, 63);;
+    background-color: white;
+    color:rgb(79, 201, 63);;
+     padding:13px;
+     border-radius: 7px;
+     width:100px;
+  }
+  @media screen and (max-width: 600px) {
+    .menu {
+      visibility: hidden;
+      box-shadow:0px 0px 5px 0px white;
+     
+    }
+   
+    .menu ul li{
+      display:block;  
+  }
+    .logo{
+      visibility: visible;
+    }
+    .resBtn{
+      border:1px solid white;
+      opacity:0.5;
+      background-image: url("resources/menu.png");
+      background-size: 50px 50px;
+      float:right;
+      width:50px;
+      height:50px;
+     margin-top:20px;
+    }
+    .resBtn + .menu:active,
+    .resBtn:focus + .menu {
+      visibility: visible;
+    } 
+   
+    #menuBtn{
+    visibility: visible;
+    margin-top:20px;
+    width:60px;
+    background-color:white;
+    border:1px solid grey;
+    border-radius: 5px;
+    outline:none;
+    }
+  
+    
+    .menu ul li a{
+      list-style: none;
+      text-align: center;
+    }
+    a{
+      text-decoration:none;
+    }
+    .btn-simple{
+      background-color:rgb(79, 201, 63);
+      color:white;
+      padding:5px;
+      border-radius: 5px;
+      width:100px;
+    }
+    .btn-outline{
+      border:1px solid rgb(79, 201, 63);;
+      background-color: white;
+      color:rgb(79, 201, 63);;
+       padding:5px;
+       border-radius: 5px;
+       width:100px;
+    }
+  }
