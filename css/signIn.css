@@ -1,24 +1,28 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.img-side {
+    float: left;
+    width: 50%;
+}
 .main-section {
     width: 85%;
     margin: 50px auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+form{
+    margin-top:50px;
+}
 .centerBox{
     border:2px solid white;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    padding-top:20px;
+    padding-top:10px;
     padding-bottom: 20px;
     width:49%;
     float: right;
     text-align: center;
 }
-input{
-    color:rgb(158, 158, 151);
+.input{
     border-radius: 30px;
     border:1px solid rgb(241, 241, 235);
     height:40px;
@@ -27,6 +31,10 @@ input{
     margin-bottom: 10px;
     padding-left: 20px;
     outline: none;
+}
+.radioBtn {
+    width:20px;
+    margin:20px 0;
 }
 .submitBtn{
     border:1px solid white;
@@ -38,8 +46,13 @@ input{
     text-transform: uppercase;
     outline: none;
 }
+.submitBtn:hover {
+    background-color: rgb(55, 173, 39);
+}
 .formImage{
-  
+    height: 70px;
+    margin-top: -30px;
+    text-align: center;
 }
 
 .img-side {
@@ -61,21 +74,19 @@ input{
    color: rgb(0, 0, 0);
    text-align: center;
 }
-.signInLink{
-    color:rgb(79, 201, 63);
-}
 @media only screen and (max-width: 600px) {
     .img-side{
         display:none;
     }
     .centerBox{
         float:left;
-        margin-top:-100px;
+       
     }
     .formImage{
-        margin-left: 100px;
+        margin-left: 50px;
     }
     .signInLink{
         margin-top:-100px;
     }
+   
   }

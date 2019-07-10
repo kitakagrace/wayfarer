@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="resources/wayfarerLogo.jpg" type="image/x-icon">
-    <title>Document</title>
+    <title>Wayfarer</title>
 </head>
 <body>
     <div class="main-section">
@@ -14,13 +14,18 @@
             <div class="formImage">
                 <img src="resources/wayfarerLogo.jpg" alt="" srcset="">
             </div>
-            <form action="" method="post">
-                <input type="email" name="" class="emailInput" placeholder="Email Adress">
+            <form action="#" method="post">
+                <input id="userName" type="text" name="" class="emailInput" placeholder="Username">
                 <br>
-                <input type="password" name="" class="passwordInput" placeholder="Password">
+                <input id="email" type="email" name="" class="emailInput" placeholder="Email Adress">
                 <br>
-                <input type="submit" class="submitBtn" value="Sign Up">
+                <input id="password" type="password" name="" class="passwordInput" placeholder="Password">
+                <br>
+                
             </form>
+            <input type="submit" onClick="signUpFunction();" class="submitBtn" value="Sign Up">
+            <a class="signInLink" href="/signIn.html">Already a User? Sign in</a>
+            
         </div>
         <img src="resources/background.jpg" alt="" class="img-side" srcset="">
     </div>
@@ -28,5 +33,21 @@
         <p>&copy 2019 Wayfarer Copyrights Reserved.</p> 
     </footer>
 </body>
+<script>
+ function signUpFunction(){
+     userName = document.getElementById("userName").value;
+     email = document.getElementById("email").value;
+     password = document.getElementById("password").value;
+     if (userName === ""){
+         alert("Empty username");
+     }else if(email === ""){
+         alert("Empty email");
+     }else if(password === ""){
+         alert ("Empty password");
+     }else{
+        window.open('/viewTrips.html', '_self');
+     }
+ }
+</script>
 
 </html>
