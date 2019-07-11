@@ -10,6 +10,7 @@
     margin-left:13%;
     margin-top:20px;
     border-radius:10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .tripTitle{
     text-align:center;
@@ -109,6 +110,7 @@
   .navBar{
      height:100px;
      box-shadow: 0px 0px 5px 0px rgb(161, 159, 159);
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .menu ul{
     float:right;
