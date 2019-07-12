@@ -2,7 +2,7 @@
 
 WayFarer is a public bus transportation booking service
 
-# Prerequisites
+# Features
 
 1. User can sign up.
 2. User can sign in.
@@ -14,3 +14,8 @@ WayFarer is a public bus transportation booking service
 8. View all bookings. An Admin can see all bookings, while user can see all of his/her
 bookings.
 9. Users can delete their booking.
+
+
+# Manual testing URL
+https://prophetgrace.github.io/wayfarer/
+
