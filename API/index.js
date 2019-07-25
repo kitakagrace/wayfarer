@@ -180,7 +180,6 @@ app.post('/api/v1/trips',checkToken, (req, res) => {
      });
   });
 
-
 app.listen(PORT, (req,res) =>{
     console.log(`API running at port ${PORT}`)
 })
