@@ -180,7 +180,7 @@ app.post('/api/v1/trips',checkToken, (req, res) => {
      });
   });
 
-  app.get('/api/v1/trips/:id', (req, res) => {
+  app.get('/api/v1/trips/:id',checkToken, (req, res) => {
     const id = parseInt(req.params.id, 10);
     db_trips.map((trip) => {
       if (trip.id === id) {
