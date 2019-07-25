@@ -161,7 +161,6 @@ app.post('/api/v1/trips',checkToken, (req, res) => {
       }
     });
   
-  
       return res.status(404).send({
         status: 'error',
         error: 'Item for deletion not found',
