@@ -24,7 +24,7 @@ const checkToken = (req, res, next) => {
         res.sendStatus(403)
     }
 }
-
+      
 app.post('/api/v1/signup', (req,res)=>{
     const userSchema = {
         email: req.body.email,
