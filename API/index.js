@@ -13,8 +13,7 @@ app.post('/api/v1/signup', (req,res)=>{
         email: req.body.email,
         password:req.body.password,
         first_name:req.body.first_name,
-        last_name:req.body.last_name,
-              
+        last_name:req.body.last_name,      
     }
     jwt.sign({userSchema},'secretkey',(error,token)=>{
         
@@ -30,9 +29,6 @@ app.post('/api/v1/signup', (req,res)=>{
        
     })
 })
-
-
-
 
 
 app.listen(PORT, (req,res) =>{
