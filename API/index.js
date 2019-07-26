@@ -242,6 +242,7 @@ app.get('/api/v1/bookings', (req, res) => {
     error: 'Bookings not found',
   });
 });
+
 app.listen(PORT, (req,res) =>{
     console.log(`API running at port ${PORT}`)
 })
