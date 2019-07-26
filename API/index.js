@@ -195,7 +195,41 @@ app.post('/api/v1/trips',checkToken, (req, res) => {
      error: 'Trip doesnot exist',
     });
   });
-     
+
+  app.post('/api/v1/bookings', (req, res) => {
+  
+  if(!req.body.trip_id) {
+    return res.status(400).send({
+      success: 'false',
+      message: 'Trip id is required'
+    });
+  } else if(!req.body.user_id){
+    return res.status(400).send({
+      success: 'false',
+      message: 'User is required'
+    });
+  }else if(!req.body.created_on){
+    return res.status(400).send({
+      success: 'false',
+      message: 'Date is required'
+    });
+  }
+  
+ const booking = {
+    id: db_bookings.length + 1,
+    trip_id:req.body.trip_id,
+    user_id: req.body.user_id,
+    created_on:req.body.created_on
+    
+ }
+ db_bookings.push(booking);
+ return res.status(201).send({
+   success: 'true',
+   message: 'Booking is successfull',
+   booking
+ })
+});
+
 app.listen(PORT, (req,res) =>{
     console.log(`API running at port ${PORT}`)
 })
