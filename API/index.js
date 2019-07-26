@@ -228,6 +228,7 @@ app.post('/api/v1/trips',checkToken, (req, res) => {
    message: 'Booking is successfull',
    booking
  })
+ 
 });
 
 app.listen(PORT, (req,res) =>{
