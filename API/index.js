@@ -228,9 +228,20 @@ app.post('/api/v1/trips',checkToken, (req, res) => {
    message: 'Booking is successfull',
    booking
  })
- 
+
 });
 
+app.get('/api/v1/bookings', (req, res) => {
+  res.status(200).send({
+    status: 'success',
+    data: db_bookings
+  })
+
+  return res.status(404).send({
+    status: 'error',
+    error: 'Bookings not found',
+  });
+});
 app.listen(PORT, (req,res) =>{
     console.log(`API running at port ${PORT}`)
 })
