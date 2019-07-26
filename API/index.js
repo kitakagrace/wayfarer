@@ -255,6 +255,8 @@ app.delete('/api/v1/bookings/:id', (req, res) => {
        });
     }
   });
+
+  
 app.listen(PORT, (req,res) =>{
     console.log(`API running at port ${PORT}`)
 })
