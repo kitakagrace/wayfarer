@@ -147,6 +147,30 @@ app.post('/api/v1/trips',checkToken, (req, res) => {
    })
   });
 
+  app.delete('/api/v1/trips/:id',checkToken, (req, res) => {
+    const id = parseInt(req.params.id, 10);
+  
+    db_trips.map((trip, index) => {
+      if (trip.id === id) {
+         db_trips.splice(index, 1);
+         return res.status(200).send({
+           status: 'success',
+           message: 'Trip deleted successfuly',
+           
+         });
+      }
+    });
+  
+      return res.status(404).send({
+        status: 'error',
+        error: 'Item for deletion not found',
+      });
+  
+   
+  });
+
+
+
 app.listen(PORT, (req,res) =>{
     console.log(`API running at port ${PORT}`)
 })
