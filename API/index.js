@@ -20,7 +20,7 @@ const checkToken = (req, res, next) => {
         req.token = token;
         next();
     } else {
-        //If header is undefined return Forbidden (403)
+        
         res.sendStatus(403)
     }
 }
@@ -254,10 +254,11 @@ app.delete('/api/v1/bookings/:id', (req, res) => {
          message: 'Booking deleted successfuly',
        });
     }
-  });
+  })
+})
 
   
-app.listen(PORT, (req,res) =>{
-    console.log(`API running at port ${PORT}`)
+app.listen(PORT,(req,res) =>{
+  console.log(`App running on port ${PORT}`)
 })
  
