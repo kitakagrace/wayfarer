@@ -169,7 +169,16 @@ app.post('/api/v1/trips',checkToken, (req, res) => {
    
   });
 
-
+  app.get('/api/v1/trips',checkToken, (req, res) => {
+    res.status(200).send({
+      status: 'success',
+      data: db_trips
+    })
+    return res.status(404).send({
+      status: 'error',
+      error: 'trips dont exist',
+     });
+  });
 
 app.listen(PORT, (req,res) =>{
     console.log(`API running at port ${PORT}`)
