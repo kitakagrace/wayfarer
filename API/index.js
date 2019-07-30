@@ -20,7 +20,7 @@ const checkToken = (req, res, next) => {
         req.token = token;
         next();
     } else {
-        //If header is undefined return Forbidden (403)
+        
         res.sendStatus(403)
     }
 }
@@ -243,7 +243,22 @@ app.get('/api/v1/bookings', (req, res) => {
   });
 });
 
-app.listen(PORT, (req,res) =>{
-    console.log(`API running at port ${PORT}`)
+app.delete('/api/v1/bookings/:id', (req, res) => {
+  const id = parseInt(req.params.id, 10);
+
+  db_bookings.map((booking, index) => {
+    if (booking.id === id) {
+       db_bookings.splice(index, 1);
+       return res.status(200).send({
+         status: 'success',
+         message: 'Booking deleted successfuly',
+       });
+    }
+  })
+})
+
+  
+app.listen(PORT,(req,res) =>{
+  console.log(`App running on port ${PORT}`)
 })
  
