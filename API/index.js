@@ -180,6 +180,22 @@ app.post('/api/v1/trips',checkToken, (req, res) => {
      });
   });
 
+  app.get('/api/v1/trips/:id',checkToken, (req, res) => {
+    const id = parseInt(req.params.id, 10);
+    db_trips.map((trip) => {
+      if (trip.id === id) {
+        return res.status(200).send({
+          status: 'success',
+          data: trip
+        });
+      } 
+  });
+   return res.status(404).send({
+     status: 'error',
+     error: 'Trip doesnot exist',
+    });
+  });
+     
 app.listen(PORT, (req,res) =>{
     console.log(`API running at port ${PORT}`)
 })
